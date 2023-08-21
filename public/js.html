@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Questions</title>
+</head>
+<body>
+    <style>
+        /* Updated CSS */
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+   </style>
+<div class="nav" >
+ <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+ <div onclick="htmlserver()">html</div>
+ <div onclick="cssserver()">css</div>
+ <div onclick="jsserver()">java script</div>
+ <div onclick="djangoserver()">django</div>
+ <div onclick="laravelserver()">laravel</div>
+ <div onclick="nodeserver()">node.js</div>
+ <div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+    function homeserver(){
+        fetch('/homeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function htmlserver(){
+        fetch('/htmlserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function cssserver(){
+        fetch('/cssserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function jsserver(){
+        fetch('/jsserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function djangoserver(){
+        fetch('/djangoserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function laravelserver(){
+        fetch('/laravelserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function nodeserver(){
+        fetch('/nodeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function springserver(){
+        fetch('/springserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+   
+
+    </script>
+    <div style="padding-top:50px;">
+        <h1>JavaScript Interview Questions</h1>
+        <p>JavaScript interview questions and answers provide a list of top 20 interview questions. The frequently asked JavaScript interview questions with answers for beginners and professionals are given below.</p>
+
+        <ol>
+            <li><strong>What is JavaScript?</strong><br>
+            JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation. The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser. <a href="#">More details</a>.</li>
+
+            <li><strong>List some features of JavaScript.</strong><br>
+            Some of the features of JavaScript are:
+            <ul>
+                <li>Lightweight</li>
+                <li>Interpreted programming language</li>
+                <li>Good for applications that are network-centric</li>
+                <li>Complementary to Java</li>
+                <li>Complementary to HTML</li>
+                <li>Open source</li>
+                <li>Cross-platform</li>
+            </ul>
+            </li>
+
+            <li><strong>Who developed JavaScript, and what was the first name of JavaScript?</strong><br>
+            JavaScript was developed by Brendan Eich, who was a Netscape programmer. Brendan Eich developed this new scripting language in just ten days in September 1995. At the time of its launch, JavaScript was initially called Mocha. After that, it was called LiveScript and later known as JavaScript.</li>
+
+            <!-- Continue with the remaining questions and answers here -->
+
+        </ol>
+    
+    </div>
+    <div>
+        <h1>Advantages, Disadvantages, and Types of Functions in JavaScript</h1>
+        <h2>4. Advantages of JavaScript:</h2>
+        <ul>
+            <li>Server interaction is less</li>
+            <li>Feedback to the visitors is immediate</li>
+            <li>Interactivity is high</li>
+            <li>Interfaces are richer</li>
+        </ul>
+
+        <h2>5. Disadvantages of JavaScript:</h2>
+        <ul>
+            <li>No support for multithreading</li>
+            <li>No support for multiprocessing</li>
+            <li>Reading and writing of files is not allowed</li>
+            <li>No support for networking applications</li>
+        </ul>
+
+        <h2>6. Named Function in JavaScript:</h2>
+        <p>The function which is named at the time of definition is called a named function.</p>
+        <pre>
+function msg()  
+{  
+  document.writeln("Named Function");  
+}
+msg(); // Output: Named Function
+        </pre>
+
+        <h2>7. Types of Functions in JavaScript:</h2>
+        <p>The types of functions are:</p>
+        <ul>
+            <li><strong>Named:</strong> These types of functions contain a name at the time of definition.</li>
+            <pre>
+function display()  
+{  
+  document.writeln("Named Function");  
+}
+display(); // Output: Named Function
+            </pre>
+            <li><strong>Anonymous:</strong> These types of functions do not contain any name. They are declared dynamically at runtime.</li>
+            <pre>
+var display = function()  
+{  
+  document.writeln("Anonymous Function");  
+}
+display(); // Output: Anonymous Function
+            </pre>
+        </ul>
+    </div>
+    <div>
+        <h1>Anonymous Function, Argument Object, and Closure in JavaScript</h1>
+        <h2>8. Anonymous Function:</h2>
+        <p>An anonymous function is a function that has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration. The function operator is more flexible than a function declaration. It can be easily used in the place of an expression.</p>
+        <pre>
+var display = function()  
+{  
+  alert("Anonymous Function is invoked");  
+}
+display(); // Output: Shows an alert "Anonymous Function is invoked"
+        </pre>
+
+        <h2>9. Can an anonymous function be assigned to a variable?</h2>
+        <p>Yes, you can assign an anonymous function to a variable.</p>
+        <pre>
+var display = function()  
+{  
+  alert("Anonymous Function is assigned to a variable");  
+}
+display(); // Output: Shows an alert "Anonymous Function is assigned to a variable"
+        </pre>
+
+        <h2>10. What is an argument object in JavaScript?</h2>
+        <p>The variables of JavaScript represent the arguments that are passed to a function.</p>
+        <pre>
+function sum(a, b)   
+{  
+  document.writeln("Sum of " + a + " and " + b + " is " + (a + b));  
+}   
+sum(5, 10); // Output: Sum of 5 and 10 is 15
+        </pre>
+
+        <h2>11. Define closure in JavaScript:</h2>
+        <p>In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope.</p>
+        <pre>
+var num = 10;  
+function sum()   
+{  
+    document.writeln(num + num);  
+}   
+sum(); // Output: 20 (num is accessed from the outer scope)
+        </pre>
+    </div>
+    <div>
+        <h1>12. Difference between JavaScript and JScript:</h1>
+        <p>Netscape provided the JavaScript language. Microsoft changed the name and called it JScript to avoid the trademark issue. In other words, you can say JScript is the same as JavaScript, but Microsoft provides it.</p>
+
+        <h1>13. Hello World Example in JavaScript:</h1>
+        <p>A simple example of JavaScript hello world is given below. You need to place it inside the body tag of HTML.</p>
+        <pre>
+<script type="text/javascript">  
+document.write("JavaScript Hello World!");  
+</script>
+        </pre>
+        <p>More details.</p>
+
+        <h1>14. Key Differences between Java and JavaScript:</h1>
+        <p>JavaScript is a lightweight programming language (most commonly known as a scripting language) developed by Netscape, Inc. It is used to make web pages interactive. It is not a part of the Java platform. Following is a list of some key differences between Java and JavaScript:</p>
+        <table>
+            <tr>
+                <th>Java</th>
+                <th>JavaScript</th>
+            </tr>
+            <tr>
+                <td>Java is a complete and strongly typed programming language used for backend coding. In Java, variables must be declared first to use in the program, and the type of a variable is checked at compile-time.</td>
+                <td>JavaScript is a weakly typed, lightweight programming language (most commonly known as a scripting language) and has more relaxed syntax and rules.</td>
+            </tr>
+            <tr>
+                <td>Java is an object-oriented programming (OOPS) language or structured programming languages such as C, C++, or .Net.</td>
+                <td>JavaScript is a client-side scripting language, and it doesn't fully support the OOPS concept. It resides inside the HTML documents and is used to make web pages interactive (not achievable with simple HTML).</td>
+            </tr>
+            <tr>
+                <td>Java creates applications that can run in any virtual machine (JVM) or browser.</td>
+                <td>JavaScript code can run only in the browser, but it can now run on the server via Node.js.</td>
+            </tr>
+            <tr>
+                <td>The Java code needs to be compiled.</td>
+                <td>The JavaScript code doesn't require being compiled.</td>
+            </tr>
+            <tr>
+                <td>Java Objects are class-based. You can't make any program in Java without creating a class.</td>
+                <td>JavaScript Objects are prototype-based.</td>
+            </tr>
+            <tr>
+                <td>Java is a Complete and Standalone language that can be used in backend coding.</td>
+                <td>JavaScript is assigned within a web page and integrates with its HTML content.</td>
+            </tr>
+            <tr>
+                <td>Java programs consume more memory.</td>
+                <td>JavaScript code is used in HTML web pages and requires less memory.</td>
+            </tr>
+            <tr>
+                <td>The file extension of the Java program is written as ".Java" and it translates source code into bytecodes which are then executed by JVM (Java Virtual Machine).</td>
+                <td>The JavaScript file extension is written as ".js" and it is interpreted but not compiled. Every browser has a JavaScript interpreter to execute the JS code.</td>
+            </tr>
+            <tr>
+                <td>Java supports multithreading.</td>
+                <td>JavaScript doesn't support multithreading.</td>
+            </tr>
+            <tr>
+                <td>Java uses a thread-based approach to concurrency.</td>
+                <td>JavaScript uses an event-based approach to concurrency.</td>
+            </tr>
+        </table>
+
+        <h1>15. How to use an External JavaScript File:</h1>
+        <p>I am assuming that the JS file name is message.js, place the following script tag inside the head tag.</p>
+        
+        <pre>
+            &lt;script type="text/javascript" src="message.js"&gt;&lt;/script&gt;
+                    </pre>
+    </div>
+    <h2>16.  How to write normal text code using JavaScript dynamically?</h2>
+        <p>The innerText property is used to write the simple text using JavaScript dynamically. Let's see a simple example:</p>
+        <pre>
+document.getElementById('mylocation').innerText = "This is text using JavaScript";
+        </pre>
+    <div>
+        <h1>JavaScript Interview Questions</h1>
+        <h2>17) Is JavaScript case sensitive language?</h2>
+        <p>Yes, JavaScript is a case-sensitive language. For example:</p>
+        <pre>
+Var msg = "JavaScript is a case-sensitive language"; //Here, var should be used to declare a variable  
+function display()   
+{  
+document.writeln(msg); // It will not display the result.  
+}   
+display();
+        </pre>
+
+        <h2>18) What is BOM?</h2>
+        <p>BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window. So, you can call all the functions of the window by specifying the window or directly. The window object provides various properties like document, history, screen, navigator, location, innerHeight, innerWidth.</p>
+        <p>More Details: Browser Object Model</p>
+        <img src="photos/ok.jpg">
+
+        <h2>19) What is DOM? What is the use of document object?</h2>
+        <p>DOM stands for Document Object Model. A document object represents the HTML document. It can be used to access and change the content of HTML.</p>
+        <p>More Details: Document Object Model</p>
+
+        <h2>20) What is the use of window object?</h2>
+        <p>The window object is created automatically by the browser that represents a window of a browser. It is not an object of JavaScript. It is a browser object.</p>
+        <p>The window object is used to display the popup dialog box. Let's see with description.</p>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>alert()</td>
+                <td>displays the alert box containing the message with ok button.</td>
+            </tr>
+            <tr>
+                <td>confirm()</td>
+                <td>displays the confirm dialog box containing the message with ok and cancel button.</td>
+            </tr>
+            <tr>
+                <td>prompt()</td>
+                <td>displays a dialog box to get input from the user.</td>
+            </tr>
+            <tr>
+                <td>open()</td>
+                <td>opens the new window.</td>
+            </tr>
+            <tr>
+                <td>close()</td>
+                <td>closes the current window.</td>
+            </tr>
+            <tr>
+                <td>setTimeout()</td>
+                <td>performs the action after a specified time like calling function, evaluating expressions.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

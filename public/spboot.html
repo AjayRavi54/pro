@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Boot Interview Questions</title>
+</head>
+<body>
+    <style>
+        /* Updated CSS */
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+   </style>
+<div class="nav" >
+ <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+ <div onclick="htmlserver()">html</div>
+ <div onclick="cssserver()">css</div>
+ <div onclick="jsserver()">java script</div>
+ <div onclick="djangoserver()">django</div>
+ <div onclick="laravelserver()">laravel</div>
+ <div onclick="nodeserver()">node.js</div>
+ <div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+    function homeserver(){
+        fetch('/homeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function htmlserver(){
+        fetch('/htmlserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function cssserver(){
+        fetch('/cssserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function jsserver(){
+        fetch('/jsserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function djangoserver(){
+        fetch('/djangoserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function laravelserver(){
+        fetch('/laravelserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function nodeserver(){
+        fetch('/nodeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function springserver(){
+        fetch('/springserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+   
+
+    </script>
+    <h1 style="padding-top:50px;">Spring Boot Interview Questions</h1>
+
+    <h2>1. What is Spring Boot?</h2>
+    <p>Spring Boot is a Spring module which provides RAD (Rapid Application Development) feature to Spring framework. It is used to create stand-alone spring based applications that you can just run because it needs very little spring configuration.</p>
+    
+
+    <h2>2. What are the advantages of Spring Boot?</h2>
+    <ul>
+        <li>Create stand-alone Spring applications that can be started using java -jar.</li>
+        <li>Embed Tomcat, Jetty or Undertow directly. You don't need to deploy WAR files.</li>
+        <li>It provides opinionated 'starter' POMs to simplify your Maven configuration.</li>
+        <li>It automatically configures Spring whenever possible.</li>
+    </ul>
+    
+
+    <h2>3. What are the features of Spring Boot?</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>SpringApplication</li>
+        <li>Application events and listeners</li>
+        <li>Admin features</li>
+    </ul>
+   
+
+    <h2>4. How to create Spring Boot application using Maven?</h2>
+    <p>There are multiple approaches to create a Spring Boot project. We can use any of the following approaches to create an application:</p>
+    <ul>
+        <li>Spring Maven Project</li>
+        <li>Spring Starter Project Wizard</li>
+        <li>Spring Initializr</li>
+        <li>Spring Boot CLI</li>
+    </ul>
+   
+
+    <h2>5. How to create Spring Boot project using Spring Initializer?</h2>
+    <p>It is a web tool which is provided by Spring on the official site. You can create a Spring Boot project by providing project details.</p>
+   
+
+    <!-- More questions can be added here -->
+    <h2>6. How to create Spring Boot project using Boot CLI?</h2>
+    <p>To create a Spring Boot project using Boot CLI, you can download the CLI tool from the official site of Spring Framework.</p>
+   
+
+    <h2>7. How to create a simple Spring Boot application?</h2>
+    <p>To create an application, you can use STS (Spring Tool Suite) IDE and follow the various steps explained in the link.</p>
+   
+
+    <h2>8. What are the Spring Boot Annotations?</h2>
+    <p>The @RestController is a stereotype annotation. It adds @Controller and @ResponseBody annotations to the class. We need to import org.springframework.web.bind.annotation package in our file, in order to implement it.</p>
+   
+
+    <h2>9. What is Spring Boot dependency management?</h2>
+    <p>Spring Boot manages dependencies and configuration automatically. You don't need to specify a version for any of the dependencies. Spring Boot upgrades all dependencies automatically when you upgrade Spring Boot.</p>
+   
+
+    <h2>10. What are the Spring Boot properties?</h2>
+    <p>Spring Boot provides various properties which can be specified inside our project's application.properties file. These properties have default values and you can set that inside the properties file. Properties are used to set values like server-port number, database connection configuration etc.</p>
+   
+    <h2>11. What are the Spring Boot Starters?</h2>
+    <p>Starters are a set of convenient dependency descriptors which we can include in our application. Spring Boot provides built-in starters which make development easier and rapid. For example, if we want to get started using Spring and JPA for database access, just include the spring-boot-starter-data-jpa dependency in your project.</p>
+   
+
+    <h2>12. What is Spring Boot Actuator?</h2>
+    <p>Spring Boot provides actuator to monitor and manage our application. Actuator is a tool which has HTTP endpoints. When the application is pushed to production, you can choose to manage and monitor your application using HTTP endpoints.</p>
+   
+
+    <h2>13. What is Thymeleaf?</h2>
+    <p>Thymeleaf is a server-side Java template engine for web applications. Its main goal is to bring elegant natural templates to your web application. It can be integrated with the Spring Framework and is ideal for HTML5 Java web applications.</p>
+   
+
+    <h2>14. How to use Thymeleaf?</h2>
+    <p>In order to use Thymeleaf, we must add it into our pom.xml file like:</p>
+    <pre>
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    </pre>
+   
+
+    <h2>15. How to connect Spring Boot to the database using JPA?</h2>
+    <p>Spring Boot provides spring-boot-starter-data-jpa starter to connect Spring application with a relational database efficiently. You can use it into the project POM (Project Object Model) file.</p>
+   
+
+    <h2>16. How to connect Spring Boot application to the database using JDBC?</h2>
+    <p>Spring Boot provides starters and libraries for connecting to our application with JDBC. Here, we are creating an application that connects with a MySQL database. It includes the following steps to create and set up JDBC with Spring Boot.</p>
+   
+
+    <h2>17. What is @RestController annotation in Spring Boot?</h2>
+    <p>The @RestController is a stereotype annotation. It adds @Controller and @ResponseBody annotations to the class. We need to import org.springframework.web.bind.annotation package in our file in order to implement it.</p>
+   
+
+    <h2>18. What is @RequestMapping annotation in Spring Boot?</h2>
+    <p>The @RequestMapping annotation is used to provide routing information. It tells Spring that any HTTP request should map to the corresponding method. We need to import org.springframework.web.annotation package in our file.</p>
+   
+
+    <h2>19. How to create Spring Boot application using Spring Starter Project Wizard?</h2>
+    <p>There is one more way to create a Spring Boot project in STS (Spring Tool Suite). Creating a project using an IDE is always a convenient way. Follow the following steps in order to create a Spring Boot Application by using this wizard.</p>
+   
+
+    <h2>20. Spring Vs Spring Boot?</h2>
+    <p>Spring is a web application framework based on Java. It provides tools and libraries to create a complete customized web application. Whereas Spring Boot is a Spring module which is used to create spring application projects that can just run.</p>
+   
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node.js Interview Questions</title>
+</head>
+<body>
+    <style>
+        /* Updated CSS */
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+   </style>
+<div class="nav" >
+ <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+ <div onclick="htmlserver()">html</div>
+ <div onclick="cssserver()">css</div>
+ <div onclick="jsserver()">java script</div>
+ <div onclick="djangoserver()">django</div>
+ <div onclick="laravelserver()">laravel</div>
+ <div onclick="nodeserver()">node.js</div>
+ <div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+    function homeserver(){
+        fetch('/homeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function htmlserver(){
+        fetch('/htmlserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function cssserver(){
+        fetch('/cssserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function jsserver(){
+        fetch('/jsserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function djangoserver(){
+        fetch('/djangoserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function laravelserver(){
+        fetch('/laravelserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function nodeserver(){
+        fetch('/nodeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function springserver(){
+        fetch('/springserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+   
+
+    </script>
+    <h1 style="padding-top:50px;">Node.js Interview Questions</h1>
+
+    <h2>1. What is Node.js? Where can you use it?</h2>
+    <p>Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser. It is used to create server-side web applications.</p>
+    <p>Node.js is perfect for data-intensive applications as it uses an asynchronous, event-driven model. You can use I/O intensive web applications like video streaming sites. You can also use it for developing: Real-time web applications, Network applications, General-purpose applications, and Distributed systems.</p>
+
+    <h2>2. Why use Node.js?</h2>
+    <p>Node.js makes building scalable network programs easy. Some of its advantages include:</p>
+    <ul>
+        <li>It is generally fast</li>
+        <li>It rarely blocks</li>
+        <li>It offers a unified programming language and data type</li>
+        <li>Everything is asynchronous</li>
+        <li>It yields great concurrency</li>
+    </ul>
+
+    <h2>3. How does Node.js work?</h2>
+    <p>A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. Let’s explore this flow of operations in detail.</p>
+    <!-- Include the Node.js Architecture Workflow diagram here if available -->
+
+    <h2>4. Why is Node.js Single-threaded?</h2>
+    <p>Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved instead of the typical thread-based implementation.</p>
+
+    <h2>5. If Node.js is single-threaded, then how does it handle concurrency?</h2>
+    <p>The Multi-Threaded Request/Response Stateless Model is not followed by the Node JS Platform, and it adheres to the Single-Threaded Event Loop Model. The Node JS Processing paradigm is heavily influenced by the JavaScript Event-based model and the JavaScript callback system. As a result, Node.js can easily manage more concurrent client requests. The event loop is the processing model's beating heart in Node.js.</p>
+
+    <!-- Include more interview questions and answers here if available -->
+
+    <p>Source: Provide the source of these interview questions</p>
+    <h2>6. Explain callback in Node.js.</h2>
+    <p>A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking. Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks.</p>
+
+    <h2>7. What are the advantages of using promises instead of callbacks?</h2>
+    <ul>
+        <li>The control flow of asynchronous logic is more specified and structured.</li>
+        <li>The coupling is low.</li>
+        <li>We've built-in error handling.</li>
+        <li>Improved readability.</li>
+    </ul>
+
+    <h2>8. How would you define the term I/O?</h2>
+    <p>The term I/O is used to describe any program, operation, or device that transfers data to or from a medium and to or from another medium.</p>
+    <p>Every transfer is an output from one medium and an input into another. The medium can be a physical device, network, or files within a system.</p>
+    <h2>6. Explain callback in Node.js.</h2>
+    <p>A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking. Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks.</p>
+
+    <h2>7. What are the advantages of using promises instead of callbacks?</h2>
+    <ul>
+        <li>The control flow of asynchronous logic is more specified and structured.</li>
+        <li>The coupling is low.</li>
+        <li>We've built-in error handling.</li>
+        <li>Improved readability.</li>
+    </ul>
+
+    <h2>8. How would you define the term I/O?</h2>
+    <p>The term I/O is used to describe any program, operation, or device that transfers data to or from a medium and to or from another medium.</p>
+    <p>Every transfer is an output from one medium and an input into another. The medium can be a physical device, network, or files within a system.</p>
+
+    <h2>9. How is Node.js most frequently used?</h2>
+    <ul>
+        <li>Real-time chats</li>
+        <li>Internet of Things</li>
+        <li>Complex SPAs (Single-Page Applications)</li>
+        <li>Real-time collaboration tools</li>
+        <li>Streaming applications</li>
+        <li>Microservices architecture</li>
+    </ul>
+
+    <h2>10. Explain the difference between frontend and backend development?</h2>
+    <table>
+        <tr>
+            <th>Front-end</th>
+            <th>Back-end</th>
+        </tr>
+        <tr>
+            <td>Refers to the client-side of an application</td>
+            <td>Refers to the server-side of an application</td>
+        </tr>
+        <tr>
+            <td>Part of a web application that users can see and interact with</td>
+            <td>Everything that happens behind the scenes</td>
+        </tr>
+        <tr>
+            <td>Includes everything that attributes to the visual aspects of a web application</td>
+            <td>Includes a web server that communicates with a database to serve requests</td>
+        </tr>
+        <tr>
+            <td>HTML, CSS, JavaScript, AngularJS, and ReactJS are some of the essentials of frontend development</td>
+            <td>Java, PHP, Python, and Node.js are some of the backend development technologies</td>
+        </tr>
+    </table>
+    <h2>11. What is NPM?</h2>
+    <p>NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.</p>
+    <p>Node Package Manager provides two main functionalities:</p>
+    <ul>
+        <li>Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org</li>
+        <li>Provides a command-line utility to install Node.js packages and also manages Node.js versions and dependencies</li>
+    </ul>
+
+    <h2>12. What are the modules in Node.js?</h2>
+    <p>Modules are like JavaScript libraries that can be used in a Node.js application to include a set of functions. To include a module in a Node.js application, use the require() function with the parentheses containing the module's name.</p>
+    <p>Node.js has many modules to provide the basic functionality needed for a web application. Some of them include:</p>
+    <table>
+        <tr>
+            <th>Core Modules</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>HTTP</td>
+            <td>Includes classes, methods, and events to create a Node.js HTTP server</td>
+        </tr>
+        <tr>
+            <td>util</td>
+            <td>Includes utility functions useful for developers</td>
+        </tr>
+        <tr>
+            <td>fs</td>
+            <td>Includes events, classes, and methods to deal with file I/O operations</td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>Includes methods for URL parsing</td>
+        </tr>
+        <tr>
+            <td>query string</td>
+            <td>Includes methods to work with query string</td>
+        </tr>
+        <tr>
+            <td>stream</td>
+            <td>Includes methods to handle streaming data</td>
+        </tr>
+        <tr>
+            <td>zlib</td>
+            <td>Includes methods to compress or decompress files</td>
+        </tr>
+    </table>
+
+    <h2>13. What is the purpose of the module .Exports?</h2>
+    <p>In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword.</p>
+
+    <h2>14. Why is Node.js preferred over other backend technologies like Java and PHP?</h2>
+    <ul>
+        <li>Node.js is very fast</li>
+        <li>Node Package Manager has over 50,000 bundles available at the developer’s disposal</li>
+        <li>Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data</li>
+        <li>Better synchronization of code between server and client due to the same codebase</li>
+        <li>Easy for web developers to start using Node.js in their projects as it is a JavaScript library</li>
+    </ul>
+
+    <h2>15. What is the difference between Angular and Node.js?</h2>
+    <table>
+        <tr>
+            <th>Angular</th>
+            <th>Node.js</th>
+        </tr>
+        <tr>
+            <td>It is a frontend development framework</td>
+            <td>It is a server-side environment</td>
+        </tr>
+        <tr>
+            <td>It is written in TypeScript</td>
+            <td>It is written in C, C++ languages</td>
+        </tr>
+        <tr>
+            <td>Used for building single-page, client-side web applications</td>
+            <td>Used for building fast and scalable server-side networking applications</td>
+        </tr>
+        <tr>
+            <td>Splits a web application into MVC components</td>
+            <td>Generates database queries</td>
+        </tr>
+    </table>
+    <h2>16. Which database is more popularly used with Node.js?</h2>
+    <p>MongoDB is the most common database used with Node.js. It is a NoSQL, cross-platform, document-oriented database that provides high performance, high availability, and easy scalability.</p>
+
+    <h2>17. What are some of the most commonly used libraries in Node.js?</h2>
+    <p>There are two commonly used libraries in Node.js:</p>
+    <ul>
+        <li>ExpressJS - Express is a flexible Node.js web application framework that provides a wide set of features to develop web and mobile applications.</li>
+        <li>Mongoose - Mongoose is also a Node.js web application framework that makes it easy to connect an application to a database.</li>
+    </ul>
+
+    <h2>18. What are the pros and cons of Node.js?</h2>
+    <table>
+        <tr>
+            <th>Node.js Pros</th>
+            <th>Node.js Cons</th>
+        </tr>
+        <tr>
+            <td>Fast processing and an event-based model</td>
+            <td>Not suitable for heavy computational tasks</td>
+        </tr>
+        <tr>
+            <td>Uses JavaScript, which is well-known amongst developers</td>
+            <td>Using callback is complex since you end up with several nested callbacks</td>
+        </tr>
+        <tr>
+            <td>Node Package Manager has over 50,000 packages that provide the functionality to an application</td>
+            <td>Dealing with relational databases is not a good option for Node.js</td>
+        </tr>
+        <tr>
+            <td>Best suited for streaming huge amounts of data and I/O intensive operations</td>
+            <td>Since Node.js is single-threaded, CPU intensive tasks are not its strong suit</td>
+        </tr>
+    </table>
+
+    <h2>19. What is the command used to import external libraries?</h2>
+    <p>The "require" command is used for importing external libraries. For example - "var http = require("HTTP");" This will load the HTTP library and the single exported object through the HTTP variable.</p>
+</body>
+</html>

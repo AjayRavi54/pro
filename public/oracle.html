@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oracle Database Interview Questions (Contd.)</title>
+</head>
+<body>
+   <style>
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+ </style>
+<div class="nav" >
+<div onclick="homeserver()"><a href="index.html"> Home</a></div>
+<div onclick="htmlserver()">html</div>
+<div onclick="cssserver()">css</div>
+<div onclick="jsserver()">java script</div>
+<div onclick="djangoserver()">django</div>
+<div onclick="laravelserver()">laravel</div>
+<div onclick="nodeserver()">node.js</div>
+<div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+  function homeserver(){
+      fetch('/homeserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function htmlserver(){
+      fetch('/htmlserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function cssserver(){
+      fetch('/cssserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function jsserver(){
+      fetch('/jsserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function djangoserver(){
+      fetch('/djangoserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function laravelserver(){
+      fetch('/laravelserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function nodeserver(){
+      fetch('/nodeserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function springserver(){
+      fetch('/springserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+ 
+
+  </script>
+    <h1 style="padding-top:50px;">Oracle Database Interview Questions </h1>
+
+    <h2>1. What are the components of the physical database structure of an Oracle database?</h2>
+    <p>Components of the physical database structure are:</p>
+    <ul>
+        <li>One or more data files</li>
+        <li>Two or more redo log files</li>
+        <li>One or more control files</li>
+    </ul>
+
+    <h2>2. What are the components of the logical database structure in an Oracle database?</h2>
+    <p>Components of the logical database structure are:</p>
+    <ul>
+        <li>Tablespaces</li>
+        <li>Database's schema objects</li>
+    </ul>
+
+    <h2>3. What is a tablespace?</h2>
+    <p>A database contains a logical storage unit called tablespaces. A tablespace is a set of related logical structures that group related logical structures together.</p>
+
+    <h2>4. What is a SYSTEM tablespace and when is it created?</h2>
+    <p>When the database is created in the Oracle database system, it automatically generates a SYSTEM named SYSTEM tablespace. The SYSTEM tablespace contains data dictionary tables for the entire database.</p>
+
+    <h2>5. What is an Oracle table?</h2>
+    <p>A table is the basic unit of data storage in an Oracle database. A table contains all the accessible information of a user in rows and columns.</p>
+
+    <h2>6. In Oracle version 9.3.0.5.0, what does each number show?</h2>
+    <p>The Oracle version number refers to:</p>
+    <ul>
+        <li>9 - Major database release number</li>
+        <li>3 - Database maintenance release number</li>
+        <li>0 - Application server release number</li>
+        <li>5 - Component-specific release number</li>
+        <li>0 - Platform-specific release number</li>
+    </ul>
+
+    <h2>7. What is bulk copy or BCP in Oracle?</h2>
+    <p>Bulk copy or BCP in Oracle is used to import or export data from tables and views, but it does not copy the structure of the same data. The main advantage of BCP is fast mechanism for copying data, and you can also take the backup of data easily.</p>
+
+    <h2>8. What is the relationship among database, tablespace, and data file?</h2>
+    <p>An Oracle database contains one or more logical storage units called tablespaces. These tablespaces collectively store the whole data of databases, and each tablespace in the Oracle database consists of one or more files called datafiles. These datafiles are the physical structure that conforms to the operating system in which Oracle is running.</p>
+
+    <h2>9. What is a snapshot in Oracle database?</h2>
+    <p>A snapshot is a replica of a target master table from a single point-in-time. In simple words, you can say a snapshot is a copy of a table on a remote database.</p>
+
+    <h2>10. What is the difference between hot backup and cold backup in Oracle? Tell about their benefits also.</h2>
+    <p>Hot backup (Online Backup): A hot backup is also known as an online backup because it is done while the database is active. Some sites cannot shut down their database while making a backup copy as they are used 24 hours a day, 7 days a week.</p>
+    <p>Cold backup (Offline Backup): A cold backup is also known as an offline backup because it is done while the database has been shutdown using the SHUTDOWN normal command. If the database is suddenly shutdown with an uncertain condition, it should be restarted with RESTRICT mode and then shutdown with the NORMAL option.</p>
+    <p>For a complete cold backup, the following files must be backed up:</p>
+    <ul>
+        <li>All datafiles</li>
+        <li>All control files</li>
+        <li>All online redo log files (optional)</li>
+        <li>The init.ora file (you can recreate it manually)</li>
+    </ul>
+
+    <!-- More questions can be added here -->
+
+    <h2>11. How many memory layers are in the Oracle shared pool?</h2>
+    <p>Oracle shared pool contains two layers:</p>
+    <ul>
+        <li>Library cache</li>
+        <li>Data dictionary cache</li>
+    </ul>
+
+    <h2>12. What is a save point in the Oracle database?</h2>
+    <p>Save points are used to divide a transaction into smaller parts. It allows rolling back of a transaction. Maximum five save points are allowed. It is used to save our data, whenever you encounter an error you can roll back from the point where you save your SAVEPOINT.</p>
+
+    <h2>13. What is a hash cluster in Oracle?</h2>
+    <p>A hash cluster is a technique to store data in a hash table and improve the performance of data retrieval. A hash function is applied to the table row's cluster key value and stored in the hash cluster.</p>
+
+    <h2>14. What are the various Oracle database objects?</h2>
+    <p>Various Oracle database objects are:</p>
+    <ul>
+        <li>Tables: This is a set of elements organized in vertical and horizontal fashion.</li>
+        <li>Tablespaces: This is a logical storage unit in Oracle.</li>
+        <li>Views: It is a virtual table derived from one or more tables.</li>
+        <li>Indexes: This is a performance tuning method to process the records.</li>
+        <li>Synonyms: This is a name for tables.</li>
+    </ul>
+
+    <h2>15. What is the difference between pre-select and pre-query?</h2>
+    <p>A pre-query trigger fires before the query executes and fires once while you try to query. With the help of this trigger, you can modify the WHERE clause part dynamically.</p>
+    <p>A Pre-select query fires during the execute query and count query processing after Oracle Forms construct the select statement to be issued, but before the statement is actually issued.</p>
+    <p>Pre-query trigger fires before Pre-select trigger.</p>
+
+    <h2>16. What are the different types of modules in Oracle Forms?</h2>
+    <p>Following are the different modules in Oracle Forms:</p>
+    <ul>
+        <li>Form module</li>
+        <li>Menu module</li>
+        <li>Pl/SQL Library module</li>
+        <li>Object Library module</li>
+    </ul>
+
+    <h2>17. What is the usage of the ANALYZE command in Oracle?</h2>
+    <p>The ANALYZE command is used to perform various functions on an index, table, or cluster. The following list specifies the usage of the ANALYZE command in Oracle:</p>
+    <ul>
+        <li>It is used to identify migrated and chained rows of the table or cluster.</li>
+        <li>It is used to validate the structure of the object.</li>
+        <li>It helps in collecting the statistics about the object used by the optimizer. They are then stored in the data dictionary.</li>
+        <li>It helps in deleting statistics used by the object from the data dictionary.</li>
+    </ul>
+
+    <h2>18. Can you create a synonym without having a table?</h2>
+    <p>Yes. We can create a synonym without having a base table.</p>
+
+    <h2>19. What types of joins are used in writing SUBQUERIES?</h2>
+    <p>Types of joins used in writing subqueries are:</p>
+    <ul>
+        <li>Self join</li>
+        <li>Outer Join</li>
+        <li>Equi-join</li>
+    </ul>
+
+    <h2>20. What is the usage of the control file in Oracle?</h2>
+    <p>In Oracle, the control file is used for database recovery. The control file is also used to identify the database and redo log files that must be opened for database operation to go ahead, whenever an instance of an ORACLE database begins.</p>
+</body>
+</html>

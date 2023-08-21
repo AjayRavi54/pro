@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Interview Questions</title>
+</head>
+<body>
+    <style>
+        /* Updated CSS */
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+   </style>
+<div class="nav" >
+ <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+ <div onclick="htmlserver()">html</div>
+ <div onclick="cssserver()">css</div>
+ <div onclick="jsserver()">java script</div>
+ <div onclick="djangoserver()">django</div>
+ <div onclick="laravelserver()">laravel</div>
+ <div onclick="nodeserver()">node.js</div>
+ <div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+    function homeserver(){
+        fetch('/homeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function htmlserver(){
+        fetch('/htmlserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function cssserver(){
+        fetch('/cssserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function jsserver(){
+        fetch('/jsserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function djangoserver(){
+        fetch('/djangoserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function laravelserver(){
+        fetch('/laravelserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function nodeserver(){
+        fetch('/nodeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function springserver(){
+        fetch('/springserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+   
+
+    </script>
+    <h1 style="padding-top:50px;">Django Interview Questions</h1>
+
+    <h2>1. So what is Django?</h2>
+    <p>Django is an open-source web application framework written in Python. Developed in a fast-paced newsroom, Django enables the rapid development of easily maintainable and secure websites. It’s a favorite of newbies and advanced programmers alike.</p>
+
+    <h2>2. Is Django named after that Quentin Tarantino movie?</h2>
+    <p>No, Django is named after Django Reinhardt, a jazz guitarist from the 1930s to the early 1950s who is considered one of the best guitarists of all time.</p>
+
+    <h2>3. What are Django's most prominent features?</h2>
+    <p>Programmers like Django mostly for its convenient features like:</p>
+    <ul>
+        <li>Optimized for SEO</li>
+        <li>Extremely fast</li>
+        <li>A loaded framework that features authentications, content administrations and RSS feeds</li>
+        <li>Exceptionally scalable to meet the heaviest traffic demand</li>
+        <li>Highly secure</li>
+        <li>Versatility, enabling you to create many different types of websites</li>
+    </ul>
+
+    <h2>4. Can you name some companies that use Django?</h2>
+    <p>Some of the more well-known companies that use Django include:</p>
+    <ul>
+        <li>DISCUS</li>
+        <li>Instagram</li>
+        <li>Mozilla Firefox</li>
+        <li>Pinterest</li>
+        <li>Reddit</li>
+        <li>YouTube</li>
+    </ul>
+
+    <h2>5. Why do web developers prefer Django?</h2>
+    <p>Web developers use Django because it:</p>
+    <ul>
+        <li>Allows code modules to be divided into logical groups, making them flexible to change</li>
+        <li>Provides an auto-generated web admin module to ease website administration</li>
+        <li>Provides a pre-packaged API for common user tasks</li>
+        <li>Enables developers to define a given function’s URL</li>
+        <li>Allows users to separate business logic from the HTML</li>
+        <li>Is written in Python, one of the most popular programming languages available today</li>
+        <li>Gives you a system to define the HTML template for your web page, avoiding code duplication</li>
+    </ul>
+
+    <!-- More questions can be added here -->
+    <h2>6. What is CRUD?</h2>
+    <p>It has nothing to do with dirt or grime. It’s a handy acronym for Create, Read, Update, and Delete. It’s a mnemonic framework used to remind developers on how to construct usable models when building application programming interfaces (APIs).</p>
+
+    <h2>7. Does Django have any drawbacks?</h2>
+    <p>Django’s disadvantages include:</p>
+    <ul>
+        <li>Its monolithic size makes it unsuitable for smaller projects</li>
+        <li>Everything hinges on Django’s ORM (Object-Relational Mapping)</li>
+        <li>Everything must be explicitly defined due to a lack of convention</li>
+    </ul>
+
+    <h2>8. What does Django architecture look like?</h2>
+    <p>Django architecture consists of:</p>
+    <ul>
+        <li>Models. Describes the database schema and data structure</li>
+        <li>Views. Controls what a user sees. The view retrieves data from appropriate models, executes any calculations made, and passes it on to the template</li>
+        <li>Templates. Controls how the user sees the pages. It describes how the data received from the views need to be altered or formatted to display on the page</li>
+        <li>Controller. Made up of the Django framework and URL parsing</li>
+    </ul>
+
+    <h2>9. Explain the Django project directory structure.</h2>
+    <p>Django organizes the various sections of the web application using a directory structure by generating a project and an app folder. Creating and arranging a proper project aids in keeping the project DRY (Don't Repeat Yourself) and clean. When you create a Django project, Django creates a root directory for the project using the project name you provide. It contains the files required to provide basic functionality to your web applications.</p>
+    
+    <h2>10. What are models in Django?</h2>
+    <p>A Django model is a built-in feature of Django that allows you to construct tables, fields, and constraints. SQL (Structured Query Language) is a complicated language that includes many different queries for generating, removing, updating, and other database-related tasks.</p>
+
+    <h2>11. What are the views in Django?</h2>
+    <p>Django views are Python functions similar to HTML documents and accept HTTP requests and return HTTP responses.</p>
+
+    <h2>12. What is Django ORM?</h2>
+    <p>Django ORM is a database abstraction API using which we can interact with its database models i.e., perform actions like add, delete, modify and query objects.</p>
+
+    <h2>13. Define static files and explain their uses.</h2>
+    <p>The word "static files" refers to files in a web app that do not change, such as CSS, JavaScript, or pictures. They remain still. Static files are served up by the local Django web server for local development, and minimal configuration is required.</p>
+
+    <h2>14. What are Django-admin and manage.py and explain their commands?</h2>
+    <p>“Django-admin” is the command line utility of Django to perform administrative tasks. And manage.py is created automatically in every Django project. It performs the same functions as Django-admin, but it also modifies the DJANGO SETTINGS MODULE environment variable to point to your project's settings.py file.</p>
+
+    <h2>15. What is Jinja templating?</h2>
+    <p>Jinja is a modern, designer-friendly Python templating language that was inspired by Django templates and is frequently used for execution.</p>
+     
+    <h2>16. What are Django URLs?</h2>
+    <p>In Django, URLs serve as the front door to your online application. In urls.py, you can configure how Django routing works.</p>
+
+    <h2>17. What are the different model inheritance styles in Django?</h2>
+    <p>In Django, there are three types of inheritance:</p>
+    <ul>
+        <li>Abstract base classes - When the parent class contains common fields and the parent class table is undesirable, use this.</li>
+        <li>Multi-table inheritance - When the parent class has common fields, but the parent class table already exists in the database on its own, use this.</li>
+        <li>Proxy models - Use this when you want to change the parent class's behavior, such as by modifying the order or adding a new model manager.</li>
+    </ul>
+
+    <h2>18. In Django’s context, what’s the difference between a project and an app?</h2>
+    <p>The project covers the entire application, while an app is a module or application within the project that deals with one dedicated requirement. So, a project consists of several apps, while an app features in multiple projects.</p>
+
+    <h2>19. What’s a model in Django?</h2>
+    <p>A model consists of all the necessary fields and attributes of your stored data. They are a single, definitive source of information regarding your data.</p>
+
+    <h2>20. What are Django’s templates?</h2>
+    <p>Django templates render information in a designer-friendly format to present to the user. Using the Django Template Language (DTL), a user can generate HTML dynamically. Django templates consist of simple text files that can create any text-based format such as XML, CSV, and HTML.</p>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Questions and Answers</title>
+</head>
+<body>
+    <style>
+        /* Updated CSS */
+       
+.nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+   </style>
+<div class="nav" >
+ <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+ <div onclick="htmlserver()">html</div>
+ <div onclick="cssserver()">css</div>
+ <div onclick="jsserver()">java script</div>
+ <div onclick="djangoserver()">django</div>
+ <div onclick="laravelserver()">laravel</div>
+ <div onclick="nodeserver()">node.js</div>
+ <div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+    function homeserver(){
+        fetch('/homeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function htmlserver(){
+        fetch('/htmlserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function cssserver(){
+        fetch('/cssserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function jsserver(){
+        fetch('/jsserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function djangoserver(){
+        fetch('/djangoserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function laravelserver(){
+        fetch('/laravelserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function nodeserver(){
+        fetch('/nodeserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+    function springserver(){
+        fetch('/springserver')
+        .then(response =>response.text())
+        .then(data =>{
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => console.error('error',error));
+    }
+   
+
+    </script>
+    <div style="padding-top:50px;">
+        <ol>
+            <li><strong>What is CSS?</strong>
+                <p>
+                    CSS stands for Cascading Style Sheet. It is a popular styling language used with HTML to design websites. It can also be used with any XML documents, including plain XML, SVG, and XUL.
+                </p>
+            </li>
+            <li><strong>What is the origin of CSS?</strong>
+                <p>
+                    SGML (Standard Generalized Markup Language) is the origin of CSS. It is a language that defines markup languages.
+                </p>
+            </li>
+            <li><strong>What are the different variations of CSS?</strong>
+                <p>
+                    Following are the different variations of CSS:
+                </p>
+                <ul>
+                    <li>CSS1</li>
+                    <li>CSS2</li>
+                    <li>CSS2.1</li>
+                    <li>CSS3</li>
+                    <li>CSS4</li>
+                </ul>
+            </li>
+            <li><strong>How can you integrate CSS on a web page?</strong>
+                <p>
+                    There are three methods to integrate CSS on web pages:
+                </p>
+                <ul>
+                    <li>Inline method - It is used to insert style sheets in HTML document.</li>
+                    <li>Embedded/Internal method - It is used to add a unique style to a single document.</li>
+                    <li>Linked/Imported/External method - It is used when you want to make changes on multiple pages.</li>
+                </ul>
+            </li>
+            <li><strong>What are the advantages of CSS?</strong>
+                <p>
+                    Some advantages of CSS include:
+                </p>
+                <ul>
+                    <li>Bandwidth</li>
+                    <li>Site-wide consistency</li>
+                    <li>Page reformatting</li>
+                    <li>Accessibility</li>
+                    <li>Content separated from presentation</li>
+                </ul>
+            </li>
+            <li><strong>What are the limitations of CSS?</strong>
+                <p>
+                    Some limitations of CSS include:
+                </p>
+                <ul>
+                    <li>Ascending by selectors is not possible</li>
+                    <li>Limitations of vertical control</li>
+                    <li>No expressions</li>
+                    <li>No column declaration</li>
+                    <li>Pseudo-class not controlled by dynamic behavior</li>
+                    <li>Rules, styles, targeting specific text not possible</li>
+                </ul>
+            </li>
+            <li><strong>What are the CSS frameworks?</strong>
+                <p>
+                    CSS frameworks are preplanned libraries that make easy and more standard-compliant web page styling. Some frequently used CSS frameworks are:
+                </p>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Foundation</li>
+                    <li>Semantic UI</li>
+                    <li>Gumby</li>
+                    <li>Ulkit</li>
+                </ul>
+            </li>
+            <li><strong>Why are background and color separate properties even though they should always be set together?</strong>
+                <p>
+                    There are two reasons behind this:
+                </p>
+                <ul>
+                    <li>It enhances the legibility of style sheets. The background property is a complex property in CSS, and if combined with color, the complexity will further increase.</li>
+                    <li>Color is an inherited property, while the background is not. This can create confusion when setting both properties together.</li>
+                </ul>
+            </li>
+            <li><strong>What is an Embedded Style Sheet?</strong>
+                <p>
+                    An Embedded style sheet is a CSS style specification method used with HTML. You can embed the entire stylesheet in an HTML document using the STYLE element.
+                </p>
+                <pre><code>
+<style>    
+body {    
+    background-color: linen;    
+}    
+h1 {    
+    color: red;    
+    margin-left: 80px;    
+}     
+</style>
+                </code></pre>
+            </li>
+            <li><strong>What are the advantages of Embedded Style Sheets?</strong>
+                <p>
+                    Some advantages of Embedded Style Sheets include:
+                </p>
+                <ul>
+                    <li>You can create classes for use on multiple tag types in the document.</li>
+                    <li>You can use selector and grouping methods to apply styles in complex situations.</li>
+                    <li>No extra download is required to import the information.</li>
+                </ul>
+            </li>
+            <li><strong>What is a CSS selector?</strong>
+                <p>
+                    A CSS selector is a string that identifies the elements to which a particular declaration applies. It is also referred to as a link between the HTML document and the style sheet. There are several different types of selectors in CSS.
+                </p>
+            </li>
+            <li><strong>Name some CSS style components.</strong>
+                <p>
+                    Some CSS style components are:
+                </p>
+                <ul>
+                    <li>Selector</li>
+                    <li>Property</li>
+                    <li>Value</li>
+                </ul>
+            </li>
+            <li><strong>What is the use of CSS Opacity?</strong>
+                <p>
+                    The CSS opacity property is used to specify the transparency of an element. It determines the degree to which light is allowed to travel through an object, effectively controlling its clarity.
+                </p>
+                <pre><code>
+<style>    
+img.trans {    
+    opacity: 0.4;    
+    filter: alpha(opacity=40); /* For IE8 and earlier */    
+}    
+</style>
+                </code></pre>
+            </li>
+            <li><strong>Explain the universal selector.</strong>
+                <p>
+                    The universal selector matches the name of any element type instead of selecting elements of a specific type.
+                </p>
+                <pre><code>
+<style>    
+* {    
+    color: green;    
+    font-size: 20px;    
+}     
+</style>
+                </code></pre>
+            </li>
+            <li><strong>Which command is used for the selection of all the elements of a paragraph?</strong>
+                <p>
+                    The <strong>p[lang]</strong> command is used for selecting all the elements of a paragraph.
+                </p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

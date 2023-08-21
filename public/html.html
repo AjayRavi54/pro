@@ -1,0 +1,346 @@
+<! doctype html>
+<html>
+    <head>
+      <style>
+        body
+        {
+            padding-left:10%;
+        }
+      </style>
+    </head>
+    <body>
+        <style>
+            /* Updated CSS */
+    .nav {
+    display: flex;
+    background-color: rgb(147, 229, 147);
+    flex-wrap: no-wrap;
+    height: 30px;
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    }
+    
+    .nav div {
+    width: 12%;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: 7px;
+    }
+    a {
+  text-decoration: none;
+}
+
+    /* Add padding to the body to prevent content from displaying behind the navigation bar */
+    
+    
+       </style>
+    <div class="nav" >
+     <div onclick="homeserver()"><a href="index.html"> Home</a></div>
+     <div onclick="htmlserver()">html</div>
+     <div onclick="cssserver()">css</div>
+     <div onclick="jsserver()">java script</div>
+     <div onclick="djangoserver()">django</div>
+     <div onclick="laravelserver()">laravel</div>
+     <div onclick="nodeserver()">node.js</div>
+     <div onclick="springserver()">spring boot</div>
+    </div>
+  
+    <script> 
+  
+        function homeserver(){
+            fetch('/homeserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function htmlserver(){
+            fetch('/htmlserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function cssserver(){
+            fetch('/cssserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function jsserver(){
+            fetch('/jsserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function djangoserver(){
+            fetch('/djangoserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function laravelserver(){
+            fetch('/laravelserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function nodeserver(){
+            fetch('/nodeserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+        function springserver(){
+            fetch('/springserver')
+            .then(response =>response.text())
+            .then(data =>{
+                document.open();
+                document.write(data);
+                document.close();
+            })
+            .catch(error => console.error('error',error));
+        }
+       
+    
+        </script>
+      
+        <div style="padding-top:50px;">
+           <h3>Introduction</h3> 
+       <div>Before starting with the interview questions on 
+        HTML Language, let’s first go through HTML, what is HTML, the career opportunities it provides, etc.
+
+HTML stands for HyperText Markup language. 
+It is a standard text formatting language used for
+ developing web pages released in 1993. HTML is a language that is interpreted by the browser and it tells the browser what to display and how to display.
+
+HTML is an important language to learn if anyone wants 
+to work in the web development domain [Web designers,
+ Web Developers]. HTML alone is not sufficient for a web 
+ developer because HTML only defines the structure of the 
+ data that will be rendered on the browser in a webpage, 
+ to make it visually appealing and to make it functional,
+  we will need to use CSS and Javascript respectively. </div>
+  <h4>1. Are the HTML tags and elements the same thing?</h4><div>  <p>
+    No,HTML elements are defined by a starting tag, may contain some content, and a closing tag.
+    For example, <strong>&lt;h1&gt;Heading 1&lt;/h1&gt;</strong> is an HTML element, but just <strong>&lt;h1&gt;</strong> is a starting tag and <strong>&lt;/h1&gt;</strong> is a closing tag.
+</p>
+<p>
+    In the first example, <strong>&lt;h1&gt;Heading 1&lt;/h1&gt;</strong>, the content "Heading 1" will be displayed as a top-level heading (h1) on the web page because it is enclosed between the opening and closing tags of the h1 element.
+</p>
+<p>
+    However, in the second example, <strong>&lt;h1&gt;</strong>, there is no content between the opening and closing tags. This is just a starting tag, and without the closing tag, it doesn't form a complete HTML element.
+</p>
+<p>
+    Similarly, <strong>&lt;/h1&gt;</strong> is only a closing tag. It indicates the end of an h1 element, but it doesn't create a complete HTML element on its own.
+</p></div>
+  <h4>2. What are tags and attributes in HTML?</h4><div>    <p>
+    Tags are the primary component of HTML that defines how the content will be structured/formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element.
+</p>
+<p>
+    For example, <strong>&lt;p align="center"&gt;Interview questions&lt;/p&gt;</strong>, in this example, the <strong>‘align’</strong> is the attribute using which we will align the paragraph to show in the center of the view.
+</p>
+<p>
+    The HTML tag <strong>&lt;p&gt;</strong> represents a paragraph element, and the <strong>‘align’</strong> attribute is used with the <strong>&lt;p&gt;</strong> tag to specify that the paragraph content should be aligned to the center of the view.
+</p>
+<p>
+    Attributes can be used with various HTML tags to add functionalities or styles to the elements. They play a crucial role in controlling the behavior and presentation of the content on a web page. It's important to use attributes appropriately to enhance the overall user experience and accessibility.
+</p></div>
+  <h4>3. What are void elements in HTML?</h4><div> <p>
+    HTML elements that do not have closing tags or do not need to be closed are known as Void elements or Self-closing elements.
+    Examples of void elements in HTML include <strong>&lt;br /&gt;</strong>, <strong>&lt;img /&gt;</strong>, <strong>&lt;hr /&gt;</strong>, and more.
+</p>
+<p>
+    Void elements are used to insert content into a web page that doesn't require additional content or nested elements. These elements are self-contained and don't have any content between an opening and closing tag.
+</p>
+<p>
+    For example, the <strong>&lt;br /&gt;</strong> tag represents a line break, <strong>&lt;img /&gt;</strong> is used to embed images, and <strong>&lt;hr /&gt;</strong> represents a horizontal rule (a horizontal line) to separate content. None of these void elements require a separate closing tag.
+</p>
+<p>
+    When using void elements, it's essential to remember to include the trailing slash ("/") before the closing angle bracket to ensure they are interpreted correctly by all browsers.
+</p></div>
+  <h4>4. What is the advantage of collapsing white space?</h4><div>HTML, a blank sequence of whitespace characters is treated as a single space character, Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes</div>
+  <h4>5. What are HTML Entities?</h4><div> <p>
+    In HTML, some characters are reserved, such as <strong>&lt;</strong>, <strong>&gt;</strong>, <strong>/</strong>, etc. To use these characters in our webpage, we need to use character entities called HTML Entities. Below are a few mappings between the reserved characters and their respective entity characters to be used.
+</p>
+<table>
+    <tr>
+        <th>Character</th>
+        <th>Entity Name</th>
+        <th>Entity Number</th>
+    </tr>
+    <tr>
+        <td><strong>&lt;</strong></td>
+        <td><strong>&amp;lt;</strong></td>
+        <td><strong>&#60;</strong></td>
+    </tr>
+    <tr>
+        <td><strong>&gt;</strong></td>
+        <td><strong>&amp;gt;</strong></td>
+        <td><strong>&#62;</strong></td>
+    </tr>
+    <tr>
+        <td><strong>&amp;</strong></td>
+        <td><strong>&amp;amp;</strong></td>
+        <td><strong>&#38;</strong></td>
+    </tr>
+    <tr>
+        <td>(non-breaking space) Eg. 10 PM</td>
+        <td><strong>&amp;nbsp;</strong> Eg. &lt;p&gt;10&amp;nbsp;&amp;nbsp;PM&lt;/p&gt;</td>
+        <td><strong>&#160;</strong></td>
+    </tr>
+</table>
+<p>
+    For example, to display the less-than sign (<) on a webpage, we use <strong>&amp;lt;</strong> or <strong>&#60;</strong> as an HTML entity. Similarly, to display the greater-than sign (>), we use <strong>&amp;gt;</strong> or <strong>&#62;</strong> as an entity. And to display an ampersand (&), we use <strong>&amp;amp;</strong> or <strong>&#38;</strong> as an entity.
+</p>
+<p>
+    Additionally, the non-breaking space ( ) is represented by <strong>&amp;nbsp;</strong> or <strong>&#160;</strong> as an entity. This ensures that multiple consecutive spaces are not collapsed into a single space by the browser.
+</p></div>
+  <h4>6. What are different types of lists in HTML?</h4><div>
+    <img  src="photos/list.png">
+  </div>
+  <h4>7. What is the ‘class’ attribute in HTML?</h4><div>The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements.</div>
+  <h4>8. What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?</h4><div>ultiple elements in HTML can have the same class value, whereas a value of id attribute of one element cannot be associated with another HTML element</div>
+  <h4>9. Define multipart form data?</h4><div>ultipart form data is one of the values of the enctype attribute. It is used to send the file data to the server-side for processing. The other valid values of the enctype attribute are text/plain and application/x-www-form-urlencoded</div>
+  <h4>10. Describe HTML layout structure.</h4><div>    <p>
+    Every web page has different components to display the intended content and a specific UI. However, there are some templated elements that are globally accepted as a standard way to structure a web page. Some of these commonly used components include:
+</p>
+<ul>
+    <li><strong>&lt;header&gt;:</strong> Stores the starting information about the web page.</li>
+    <li><strong>&lt;footer&gt;:</strong> Represents the last section of the page.</li>
+    <li><strong>&lt;nav&gt;:</strong> The navigation menu of the HTML page.</li>
+    <li><strong>&lt;article&gt;:</strong> Represents a self-contained set of information that could be independently distributed or reused.</li>
+    <li><strong>&lt;section&gt;:</strong> Used to define the basic structure of a page and can be used within the <strong>&lt;article&gt;</strong> block.</li>
+    <li><strong>&lt;aside&gt;:</strong> Represents the sidebar content of the page.</li>
+</ul>
+<p>
+    These elements help provide a more semantic and organized structure to the web page, making it easier for search engines and screen readers to understand the content and improve overall accessibility.
+</p></div>
+  <h4>11. How to optimize website assets loading?</h4><div>
+    <p>
+        To optimize website load time, various techniques can be employed to improve asset loading. Some of these optimization methods include:
+    </p>
+    <ul>
+        <li><strong>CDN Hosting:</strong> A CDN or content delivery network is a network of geographically distributed servers that help reduce latency by delivering assets from the server closest to the user's location.</li>
+        <li><strong>File Compression:</strong> This method reduces the size of assets (e.g., images, scripts, stylesheets) to minimize data transfer, resulting in faster loading times.</li>
+        <li><strong>File Concatenation:</strong> Combining multiple files into a single file reduces the number of HTTP calls required to fetch assets, reducing loading time.</li>
+        <li><strong>Minify Scripts:</strong> Minification removes unnecessary characters from scripts and CSS files, reducing their overall file size and speeding up loading times.</li>
+        <li><strong>Parallel Downloads:</strong> Hosting assets on multiple subdomains can help bypass the download limit of 6 assets per domain of modern browsers, improving overall loading performance.</li>
+        <li><strong>Lazy Loading:</strong> Instead of loading all assets at once, non-critical assets can be loaded on an as-needed basis. This technique improves initial page load times and reduces the load on the server.</li>
+    </ul>
+    <p>
+        Implementing these optimization techniques can significantly enhance the user experience by reducing page load times and improving website performance.
+    </p>
+  </div>
+  <h4>12. What are the various formatting tags in HTML?</h4><div>   <p>
+    HTML has various formatting tags that can be used to style the text content. Some of these formatting tags include:
+</p>
+<ul>
+    <li><strong>&lt;b&gt;:</strong> Makes the text bold.</li>
+    <li><strong>&lt;i&gt;:</strong> Makes the text italic.</li>
+    <li><strong>&lt;em&gt;:</strong> Makes the text italic but with added semantic importance.</li>
+    <li><strong>&lt;big&gt;:</strong> Increases the font size of the text by one unit.</li>
+    <li><strong>&lt;small&gt;:</strong> Decreases the font size of the text by one unit.</li>
+    <li><strong>&lt;sub&gt;:</strong> Makes the text a subscript.</li>
+    <li><strong>&lt;sup&gt;:</strong> Makes the text a superscript.</li>
+    <li><strong>&lt;del&gt;:</strong> Displays the text as strikeout text.</li>
+    <li><strong>&lt;strong&gt;:</strong> Marks the text as important with added semantic importance.</li>
+    <li><strong>&lt;mark&gt;:</strong> Highlights the text with a background color.</li>
+    <li><strong>&lt;ins&gt;:</strong> Displays the text as added text with underline.</li>
+</ul>
+<p>
+    These formatting tags allow you to add visual emphasis and semantic meaning to different parts of your text content in HTML.
+</p></div>
+  <h4>13. What are the different kinds of Doctypes available?</h4><div><p>
+    In HTML, there are three kinds of Doctypes (Document Type Declarations) available:
+</p>
+<ol>
+    <li><strong>Strict Doctype:</strong> It is used to enforce strict HTML standards, and it does not allow the use of deprecated elements or attributes. It is defined as follows:
+        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+    </li>
+    <li><strong>Transitional Doctype:</strong> It allows the use of deprecated elements and attributes, which were used in older versions of HTML. It is defined as follows:
+        <pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></pre>
+    </li>
+    <li><strong>Frameset Doctype:</strong> It is used when the web page contains frames. Frames are an older and now less commonly used feature of HTML. It is defined as follows:
+        <pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</code></pre>
+    </li>
+</ol>
+<p>
+    It is recommended to use the <strong>Strict Doctype</strong> (<code>&lt;!DOCTYPE html&gt;</code>) for modern web development as it enforces adherence to the latest HTML standards and encourages the use of more modern and cleaner code.
+</p></div>
+  <h4>14. Please explain how to indicate the character set being used by a document in HTML?</h4><div>
+    <p>
+        The character set used in an HTML document is defined using the <strong>&lt;meta&gt;</strong> tag inside the <strong>&lt;head&gt;</strong> element. The character set declaration tells the browser how to interpret the characters used in the HTML document.
+    </p>
+    <p>
+        In the following example, the character set is set to UTF-8, which is a widely used character encoding that supports a broad range of characters from various languages and symbol sets.
+    </p>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Defining Character Set in HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+    &lt;p&gt;
+        The character set used in an HTML document is defined using the &lt;meta&gt; tag inside the &lt;head&gt; element. The character set declaration tells the browser how to interpret the characters used in the HTML document.
+    &lt;/p&gt;
+    &lt;p&gt;
+        In the following example, the character set is set to UTF-8, which is a widely used character encoding that supports a broad range of characters from various languages and symbol sets.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </div>
+  <h4>15. What is the difference between &lt strong &gt, &ltb&gt tags and &ltem&gt, &lti&gt tags?</h4><div>
+    <p>
+        The effect on a normal webpage of the tags <strong>&lt;strong&gt;</strong>, <strong>&lt;b&gt;</strong>, <strong>&lt;em&gt;</strong>, and <strong>&lt;i&gt;</strong> is often similar in terms of font styling. Both <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags are used to apply font styling, with <strong>&lt;b&gt;</strong> representing bold and <strong>&lt;i&gt;</strong> representing italic text. However, these tags don't provide any semantic meaning to the text.
+    </p>
+    <p>
+        The key difference lies in the <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags. Both tags have a semantic meaning to emphasize certain parts of the text:
+    </p>
+    <ul>
+        <li><strong>&lt;strong&gt;:</strong> The <strong>&lt;strong&gt;</strong> tag represents text of strong importance or greater significance. It is used to emphasize the importance of the enclosed text. Visually, it may appear bold, but its primary purpose is to add semantic weight to the content.</li>
+        <li><strong>&lt;em&gt;:</strong> The <strong>&lt;em&gt;</strong> tag represents text with emphasis. It indicates that the enclosed text should be emphasized or displayed in an italicized style. Like <strong>&lt;strong&gt;</strong>, its primary function is to provide semantic importance to the content.</li>
+    </ul>
+    <p>
+        It is recommended to use <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags when the emphasis and importance of the content matter, as they not only provide styling but also convey meaningful information to assistive technologies and search engines.
+    </p>
+  </div>
+
+
+        </div>
+    </body>
+</html>

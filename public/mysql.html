@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySQL Interview Questions</title>
+</head>
+<body>
+<style>
+    .nav {
+display: flex;
+background-color: rgb(147, 229, 147);
+flex-wrap: no-wrap;
+height: 30px;
+position: fixed;
+opacity: 1;
+width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.nav div {
+width: 12%;
+text-align: center;
+font-size: 15px;
+position: relative;
+top: 7px;
+}
+
+/* Add padding to the body to prevent content from displaying behind the navigation bar */
+
+
+ </style>
+<div class="nav" >
+<div onclick="homeserver()"><a href="index.html"> Home</a></div>
+<div onclick="htmlserver()">html</div>
+<div onclick="cssserver()">css</div>
+<div onclick="jsserver()">java script</div>
+<div onclick="djangoserver()">django</div>
+<div onclick="laravelserver()">laravel</div>
+<div onclick="nodeserver()">node.js</div>
+<div onclick="springserver()">spring boot</div>
+</div>
+
+<script> 
+
+  function homeserver(){
+      fetch('/homeserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function htmlserver(){
+      fetch('/htmlserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function cssserver(){
+      fetch('/cssserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function jsserver(){
+      fetch('/jsserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function djangoserver(){
+      fetch('/djangoserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function laravelserver(){
+      fetch('/laravelserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function nodeserver(){
+      fetch('/nodeserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+  function springserver(){
+      fetch('/springserver')
+      .then(response =>response.text())
+      .then(data =>{
+          document.open();
+          document.write(data);
+          document.close();
+      })
+      .catch(error => console.error('error',error));
+  }
+ 
+
+  </script>
+    <h1 style="padding-top:50px;">MySQL Interview Questions</h1>
+
+    <h2>1. What is MySQL?</h2>
+    <p>MySQL is a multithreaded, multi-user SQL database management system which has more than 11 million installations. It is the world's second most popular and widely-used open source database. The term "My" in MySQL is coined after the name of the daughter of co-founder Michael Widenius, and "SQL" stands for Structured Query Language. MySQL is free of cost for developers to use, but enterprises have to pay a license fee to Oracle.</p>
+    <p>MySQL was initially owned by a for-profit firm MySQL AB, then Sun Microsystems bought it, and eventually, Oracle acquired Sun Microsystems, making Oracle the current owner of MySQL.</p>
+    <p>MySQL is an Oracle-supported Relational Database Management System (RDBMS) based on structured query language. It supports a wide range of operating systems, including Windows, Linux, and UNIX. While it is capable of developing various applications, it is commonly used for web applications and online publishing. MySQL is a fundamental part of the LAMP (Linux, Apache, MySQL, and PHP) stack, which is a platform used for web development.</p>
+
+    <h2>2. In which language MySQL has been written?</h2>
+    <p>MySQL is written in C and C++, and its SQL parser is written in yacc.</p>
+
+    <h2>3. What are the technical specifications of MySQL?</h2>
+    <p>MySQL has the following technical specifications:</p>
+    <ul>
+        <li>Flexible structure</li>
+        <li>High performance</li>
+        <li>Manageable and easy to use</li>
+        <li>Replication and high availability</li>
+        <li>Security and storage management</li>
+        <li>Drivers</li>
+        <li>Graphical Tools</li>
+        <li>MySQL Enterprise Monitor</li>
+        <li>MySQL Enterprise Security</li>
+        <li>JSON Support</li>
+        <li>Replication & High-Availability</li>
+        <li>Manageability and Ease of Use</li>
+        <li>OLTP and Transactions</li>
+        <li>Geo-Spatial Support</li>
+    </ul>
+
+    <!-- More questions can be added here -->
+    
+    <h2>4. What is the difference between MySQL and SQL?</h2>
+    <p>SQL, which stands for Structured Query Language, is a standard query language used to interact with databases, including MySQL. MySQL, on the other hand, is a specific database management system that stores various types of data and ensures its safe handling.</p>
+    <p>SQL is a computer language used for querying, updating, and managing relational databases, while MySQL is a software or application that implements the SQL language to enable data handling, storing, deleting, and modifying data.</p>
+    <p>In summary, SQL is a language, whereas MySQL is an application that uses SQL as the query language to interact with the database.</p>
+
+    <h2>5. What is the difference between the database and the table?</h2>
+    <p>There is a major difference between a database and a table. The differences are as follows:</p>
+    <ul>
+        <li>Tables are used to represent the division of data within a database. They are used to group related data in rows and columns.</li>
+        <li>A database, on the other hand, is a collection of tables and other objects, such as views, indexes, and procedures, that are organized and structured to store and manage data.</li>
+        <li>Tables are part of the database and are used to create datasets within the database. However, the entire database includes multiple tables, relationships, and data stored in various formats and structures.</li>
+    </ul>
+    <p>In summary, tables are a way to organize and group data within a database, while the database itself is a collection of tables and other objects used to store and manage data efficiently.</p>
+    <h2>6) Why do we use the MySQL database server?</h2>
+    <p>First of all, the MySQL server is free to use for developers and small enterprises.</p>
+    <p>MySQL server is open source.</p>
+    <p>MySQL's community is tremendous and supportive; hence any help regarding MySQL is resolved as soon as possible.</p>
+    <p>MySQL has very stable versions available, as MySQL has been in the market for a long time. All bugs arising in the previous builds have been continuously removed, and a very stable version is provided after every update.</p>
+    <p>The MySQL database server is very fast, reliable, and easy to use. You can easily use and modify the software. MySQL software can be downloaded free of cost from the internet.</p>
+
+    <h2>7) What are the different table types present in MySQL?</h2>
+    <p>There are many table types in MySQL, but the commonly used ones are:</p>
+    <ul>
+        <li>MyISAM</li>
+        <li>Heap</li>
+        <li>Merge</li>
+        <li>INNO DB</li>
+        <li>ISAM</li>
+    </ul>
+
+    <h2>8) How to install MySQL?</h2>
+    <p>Installing MySQL on our system allows us to safely create, drop, and test web applications without affecting our live website's data. There are many ways to use MySQL on our system, but the best way is to install it manually. The manual installation allows us to learn more about the system and provides more control over the database. To see the installation steps of MySQL in Windows, go to the below link:</p>
+    <a href="https://www.javatpoint.com/how-to-install-mysql">How to Install MySQL</a>
+
+    <h2>9) How to check the MySQL version?</h2>
+    <p>We can check the MySQL version on Linux using the below command:</p>
+    <code>mysql -v</code>
+    <p>If we use MySQL in windows, opening the MySQL command-line tool displayed the version information without using any flags. If we want to know more about the server information, use the below statement:</p>
+    <code>SHOW VARIABLES LIKE "%version%";</code>
+    <p>It will return the output with additional version information about the installed MySQL software like innodb_version, protocol_version, version_ssl_library, etc.</p>
+
+    <h2>10) How to add columns in MySQL?</h2>
+    <p>A column is a series of cells in a table that stores one value for each row in a table. We can add columns in an existing table using the ALTER TABLE statement as follows:</p>
+    <code>ALTER TABLE table_name<br>
+        ADD COLUMN column_name column_definition [FIRST|AFTER existing_column];</code>
+        <h2>11. What is the Lamp?</h2>
+        <p>The Lamp is a platform used for web development. The Lamp uses Linux, Apache, MySQL, and PHP as an operating system, web server, database & object-oriented scripting language. And hence abbreviated as LAMP.</p>
+    
+        <h2>12. In which language MySQL has been written?</h2>
+        <p>MySQL is written in C and C++, and its SQL parser is written in yacc.</p>
+    
+        <h2>13. What are the technical specifications of MySQL?</h2>
+        <p>MySQL has the following technical specifications:</p>
+        <ul>
+            <li>Flexible structure</li>
+            <li>High performance</li>
+            <li>Manageable and easy to use</li>
+            <li>Replication and high availability</li>
+            <li>Security and storage management</li>
+            <li>Drivers</li>
+            <li>Graphical Tools</li>
+            <li>MySQL Enterprise Monitor</li>
+            <li>MySQL Enterprise Security</li>
+            <li>JSON Support</li>
+            <li>Replication & High-Availability</li>
+            <li>Manageability and Ease of Use</li>
+            <li>OLTP and Transactions</li>
+            <li>Geo-Spatial Support</li>
+        </ul>
+    
+        <h2>14. What is the difference between MySQL and SQL?</h2>
+        <p>SQL is known as the standard query language. It is used to interact with the database like MySQL. MySQL is a database that stores various types of data and keeps it safe.</p>
+        <p>A PHP script is required to store and retrieve the values inside the database.</p>
+        <p>SQL is a computer language, whereas MySQL is a software or an application.</p>
+        <p>SQL is used for the creation of database management systems, whereas MySQL is used to enable data handling, storing, deleting, and modifying data.</p>
+    
+        <h2>15. What is the difference between the database and the table?</h2>
+        <p>There is a major difference between a database and a table. The differences are as follows:</p>
+        <ul>
+            <li>Tables are a way to represent the division of data in a database while the database is a collection of tables and data.</li>
+            <li>Tables are used to group the data in relation to each other and create a dataset. This dataset will be used in the database. The data stored in the table in any form is a part of the database, but the reverse is not true.</li>
+            <li>A database is a collection of organized data and features used to access them, whereas the table is a collection of rows and columns used to store the data.</li>
+        </ul>
+        <h2>16. How to create a table in MySQL Workbench?</h2>
+        <p>To create a table in MySQL Workbench, follow these steps:</p>
+        <ol>
+            <li>Launch MySQL Workbench and go to the Navigation tab.</li>
+            <li>Click on the Schema menu to view all the previously created databases.</li>
+            <li>Select a database and double-click on it to show sub-menus.</li>
+            <li>Choose the Tables option from the sub-menu.</li>
+            <li>Right-click on Tables and select Create Table option, or use the create new table icon.</li>
+            <li>A new popup screen will appear, where you need to fill in the table name and column details.</li>
+            <li>Click on the Apply button and then the Finish button to complete the table creation.</li>
+        </ol>
+    
+        <h2>17. How to change the table name in MySQL?</h2>
+        <p>To rename a table in MySQL, you can use the RENAME TABLE statement with the following syntax:</p>
+        <code>RENAME TABLE old_table TO new_table;</code>
+        <p>If you want to change more than one table name, you can use the following syntax:</p>
+        <code>RENAME TABLE old_tab1 TO new_tab1, old_tab2 TO new_tab2, old_tab3 TO new_tab3;</code>
+    
+        <h2>18. How to change the database name in MySQL?</h2>
+        <p>To rename a database in MySQL, follow these steps:</p>
+        <ol>
+            <li>Create a new database in MySQL.</li>
+            <li>Use the mysqldump shell command to create a dumped copy of the selected database.</li>
+            <li>Import all the data into the newly created database using the mysql command.</li>
+        </ol>
+    
+        <h2>19. How to import a database in MySQL?</h2>
+        <p>Importing a database in MySQL can be done using either the Command Line Tool or MySQL Workbench. It is useful for backing up data or transferring it between different locations. For detailed instructions, you can refer to the provided link.</p>
+    
+        <h2>20. How to change the column name in MySQL?</h2>
+        <p>To change or rename an existing column name in MySQL, you can use the ALTER TABLE and CHANGE commands together. Here's the syntax to rename a column:</p>
+        <code>ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name column_definition [FIRST|AFTER existing_column];</code>
+        <p>For example, to change the column name "S_ID" to "Stud_ID" with the data type varchar(10), you can use the following statement:</p>    
+</body>
+</html>
